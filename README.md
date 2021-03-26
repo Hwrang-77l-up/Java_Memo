@@ -11,3 +11,6 @@ https://github.com/LeeWoooo/Notepad_prj/blob/master/code/JavaMemoFont.java
 
 
 메모장 정보를 나타내는 UI
+
+![Information](https://user-images.githubusercontent.com/59963677/112626774-01a6ef00-8e74-11eb-8bb9-d403793f165b.png)
+
