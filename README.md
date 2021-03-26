@@ -9,3 +9,5 @@ https://github.com/LeeWoooo/Notepad_prj/blob/master/code/JavaMemoFont.java
 
 ![Memo_UI](https://user-images.githubusercontent.com/59963677/112626631-cefcf680-8e73-11eb-9775-d40335b1e8fd.png)
 
+
+메모장 정보를 나타내는 UI
