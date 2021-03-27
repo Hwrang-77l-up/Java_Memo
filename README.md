@@ -14,3 +14,9 @@ https://github.com/LeeWoooo/Notepad_prj/blob/master/code/JavaMemoFont.java
 
 ![Information](https://user-images.githubusercontent.com/59963677/112626774-01a6ef00-8e74-11eb-8bb9-d403793f165b.png)
 
+
+### 구현한 기능
+글 새로쓰기 기능
+저장하는 기능
+기존의 메모 파일 열기 기능
+종료하기 기능
