@@ -16,7 +16,8 @@ https://github.com/LeeWoooo/Notepad_prj/blob/master/code/JavaMemoFont.java
 
 
 ### 구현한 기능
-글 새로쓰기 기능
-저장하는 기능
-기존의 메모 파일 열기 기능
-종료하기 기능
+1. 글 새로쓰기 기능
+2. 저장하는 기능
+3. 다른 이름으로 저장하기 기능
+4. 기존의 메모 파일 열기 기능
+5. 종료하기 기능
