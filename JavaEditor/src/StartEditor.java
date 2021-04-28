@@ -1,4 +1,3 @@
-
 public class StartEditor {
 
 	public static void main(String[] args) {

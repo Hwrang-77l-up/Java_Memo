@@ -1,19 +1,22 @@
 import java.awt.BorderLayout;
+import java.awt.Font;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JTextArea;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JScrollPane;
+import javax.swing.*;
 
 @SuppressWarnings("serial")
 
-public class EditorMain extends JFrame {
+    public class EditorMain extends JFrame {
 	private JTextArea textEditor;
-	private JMenu file;
+	private JMenu file;	
 	private JMenuItem information;
 	private JMenuBar text_menuBar;
 	
@@ -22,24 +25,23 @@ public class EditorMain extends JFrame {
 	private JMenuItem save;
 	private JMenuItem newName_save;
 	private JMenuItem fileExit;
-	
+	int x = 10;
+
 	public void startState() {
-		setTitle("ì œëª© ì—†ìŒ - ìë°” ë©”ëª¨ì¥");
-		//setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
+		setTitle("Á¦¸ñ ¾øÀ½ - ÀÚ¹Ù ¸Ş¸ğÀå");
 		
 		text_menuBar = new JMenuBar();
 		textEditor = new JTextArea();
 		
 		JScrollPane text_scroll = new JScrollPane(textEditor);
+		file = new JMenu("ÆÄÀÏ");		
+		information = new JMenuItem("¸Ş¸ğÀå Á¤º¸");
 		
-		file = new JMenu("íŒŒì¼");
-		information = new JMenuItem("ë©”ëª¨ì¥ ì •ë³´");
-		
-		newText = new JMenuItem("ìƒˆë¡œ ë§Œë“¤ê¸°");
-		openFile = new JMenuItem("ì—´ê¸°");
-		save = new JMenuItem("ì €ì¥");
-		newName_save = new JMenuItem("ë‹¤ë¥¸ ì´ë¦„ìœ¼ë¡œ ì €ì¥");
-		fileExit = new JMenuItem("ëë‚´ê¸°");
+		newText = new JMenuItem("»õ·Î ¸¸µé±â");
+		openFile = new JMenuItem("¿­±â");
+		save = new JMenuItem("ÀúÀå");
+		newName_save = new JMenuItem("´Ù¸¥ ÀÌ¸§À¸·Î ÀúÀå");
+		fileExit = new JMenuItem("³¡³»±â");
 		
 		file.add(newText);
 		file.add(openFile);
@@ -48,19 +50,21 @@ public class EditorMain extends JFrame {
 		file.addSeparator();
 		file.add(fileExit);
 		
+
 		text_menuBar.add(file);
 		text_menuBar.add(information);
-		
+
 		setLayout(new BorderLayout());
 		setJMenuBar(text_menuBar);
 		add(text_scroll);
 		
-		setBounds(100, 100, 500, 300);
+		setBounds(100, 100, 500, 400);
 		setVisible(true);
-		
 		addFunction();
-	}
+}
 	
+
+
 	private void addFunction() {
 		EditorFunction function = new EditorFunction(this);
 		addWindowListener(new WindowAdapter() {
@@ -105,4 +109,5 @@ public class EditorMain extends JFrame {
 	public JMenuItem getInformation() {
 		return information;
 	}
+
 }

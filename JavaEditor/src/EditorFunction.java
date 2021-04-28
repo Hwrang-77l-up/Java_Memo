@@ -17,6 +17,10 @@ interface FunctionList {
 	void sameSave(File file);
 	void openFile();
 	void fileExit();
+	
+	/*void sizeplus();
+	void sizemin(); 
+	*/
 }
 
 public class EditorFunction implements FunctionList, ActionListener {
@@ -232,6 +236,16 @@ public class EditorFunction implements FunctionList, ActionListener {
 			}
 		}
 	}
+	
+	/*public void sizeplus() {
+	}
+	
+	public void sizemin() {
+	}
+	}
+	
+	
+	*/
 	
 }
 

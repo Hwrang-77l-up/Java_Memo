@@ -15,7 +15,7 @@ public class EditorInformation extends JDialog implements ActionListener{
 		super(new EditorMain(), "메모장 정보", true);
 		
 		JPanel introduction = new JPanel();
-		JLabel maker = new JLabel("<html> 간단하게 만들어본 자바 메모장 <br> 제작자: KDW <br> 2021-03-02 <br> License is free<br>");
+		JLabel maker = new JLabel("<html> 간단하게 만들어본 자바 메모장 <br> 제작자: KDW&KTH <br> 2021-03-02 <br> 수정 2021-04-28 <br> License is free<br>");
 		maker.setFont(new Font("Serif", Font.BOLD, 15));
 		introduction.add(maker);
 		
@@ -23,7 +23,7 @@ public class EditorInformation extends JDialog implements ActionListener{
 		
 		setLayout(null);
 		setResizable(false);
-		introduction.setBounds(50, 40, 250, 150);
+		introduction.setBounds(10, 10, 250, 250);
 		confirm.setBounds(150, 170, 100, 50);
 		
 		confirm.addActionListener(this);
